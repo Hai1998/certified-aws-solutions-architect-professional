@@ -1,8 +1,8 @@
 # AWS Organizations
 
-- Standard AWS account: it is an account which is not in an AWS Organization
-- We create an AWS Organization from a standard AWS account
-- The organization is not created in this account, we just use the account to create the organization. The standard account then becomes the **Management Account** (used to be called *Master Account*)
+- Standard AWS account: là account không thuộc AWS Organization
+- có thể tạo AWS Organization từ một standard AWS account
+- organization is not created in this account, we just use the account to create the organization. The standard account then becomes the **Management Account** (used to be called *Master Account*)
 - Using the Management Account we can invite other accounts into the organization
 - When a standard account joins an organization, it will change to **Member Account** of that organization
 - Organizations have 1 Management Account and 0 or more Member Accounts
