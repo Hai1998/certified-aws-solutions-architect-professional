@@ -1,13 +1,13 @@
 # SAML 2.0 Identity Federation
 
-- Federation lets user outside of AWS to assume a temporary role for access AWS resources
+- Federation cho phép user bên ngoài AWS to assume 1 temporary role để access AWS resources
 - These users assume identity provider access role
 - SAML 2.0 - Security Assertion Markup Language
-- SAML 2.0 allows to **indirectly** use on-premise identities with AWS (console and CLI)
-- SAML 2.0 based identity federation is used when we have and enterprise based identity provider which is SAML 2.0 compatible
-- SAML 2.0 based federation is ideal when we have an existing identity management team managing access to other services including AWS
-- If we are looking to maintain a single source of truth and/or we have more than 5000 users, SAML 2.0 based federation is recommended to be used
-- Federation is using IAM Roles and AWS Temporary Credentials (12 hours validity)
+- SAML 2.0 cho phép **indirectly/gián tiếp** sử dụng on-premise identities với AWS (console and CLI)
+- SAML 2.0 dựa trên identity federation được sử dụng khi có enterprise dựa trên identity provider khi tương thích vơí SAML 2.0
+- SAML 2.0 dựa trên federation lí tưởng khi có sẵn 1 identity management team quản lý quyền truy cập vào các services khác bao gồm AWS
+- nếu đang tìm cách maintain 1 source thực sự duy nhất and/or có nhiều hơn 5000 users, SAML 2.0 dựa trên federation được đề xuất sử dụng
+- Federation sử dụng IAM Roles and AWS Temporary Credentials (12 hours validity)
 
 ## SAML 2.0 Identity Federation Authentication Process - API Access
 
@@ -19,7 +19,7 @@
 
 ## SAML 2.0 Federation
 
-- We need to setup trust between AWS IAM and SAML (both ways)
+- cần setup trust giữa AWS IAM và SAML (both ways)
 - SAML 2.0 enabled web based, cross domain SSO
 - Uses the STS API: `AssumeRoleWithSAML`
-- It is the old way of doing federation, recommended way by AWS is to use **Amazon Single Sign On (SSO)**
+- đó là các cũ để làm federation, cách được AWS khuyến nghị là sử dụng **Amazon Single Sign On (SSO)**
