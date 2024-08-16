@@ -1,8 +1,8 @@
 # AD Connector (Directory Services)
 
-- AD Connector provides a pair of directory endpoints in a VPC
-- It injects ENIs into to subnets in a VPC
-- Once injected AD connector appears as a native directory to other AWS instances capable of using a directory service
+- AD Connector cung cấp 1 cặp directory endpoints trong 1 VPC
+- nó đưa các ENIs vào trong subnets của 1 VPC
+- Khi đã được chèn, AD Connector xuất hiện như một danh mục gốc đối với các instance AWS khác có khả năng sử dụng dịch vụ danh mục.Once injected AD connector appears as a native directory to other AWS instances capable of using a directory service
 - Redirects requests to an existing on-premise directory server, which means no directory data is stored in AWS
 - AD connector allows us to use AWS services which do require an AD directory (such as Workspaces) and use this with an on-premises directory service => we don't need to deploy additional AD directory in AWS
 - There are 2 sizes of directory services *small* and *large*, while there are no explicit user limits, the chosen size does impact the amount of compute allocated by AWS for the connector
